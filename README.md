@@ -1,10 +1,7 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# marcobotto.com
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+Uncompiled [Gatsby](https://www.gatsbyjs.org/) source code for [marcobotto.com](http://marcobotto.com).
 
-## Running in development
-`gatsby develop`
+### Notes
+
+Despite being open sourced, all and content remain copyright of Marco Botto.
