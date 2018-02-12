@@ -1,0 +1,32 @@
+{
+  "name": "marcobotto.com",
+  "description": "marcobotto.com source",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf .cache && rm -rf public",
+    "start": "yarn clean && yarn develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.188",
+    "gatsby-link": "^1.6.36",
+    "gatsby-plugin-google-analytics": "^1.0.17",
+    "gatsby-plugin-netlify": "^1.0.17",
+    "gatsby-plugin-react-helmet": "^2.0.4",
+    "gatsby-remark-prismjs": "^1.2.14",
+    "gatsby-remark-responsive-iframe": "^1.4.16",
+    "gatsby-remark-smartypants": "^1.4.10",
+    "gatsby-source-filesystem": "^1.5.18",
+    "gatsby-transformer-remark": "^1.7.31",
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.6",
+    "typography-theme-twin-peaks": "^0.15.11"
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2"
+  }
+}
