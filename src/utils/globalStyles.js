@@ -2,6 +2,8 @@ import { injectGlobal } from 'emotion';
 
 import { colors } from '@utils';
 
+import './prismjs';
+
 injectGlobal`
   * {
     box-sizing: border-box;
