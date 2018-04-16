@@ -4,6 +4,7 @@ module.exports = {
     author: 'Marco Botto',
   },
   plugins: [
+    'gatsby-plugin-emotion',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,9 +29,15 @@ module.exports = {
               wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
-          'gatsby-remark-prismjs',
           'gatsby-remark-smartypants',
           'gatsby-remark-source-instance',
+          'gatsby-remark-use-jsx',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'gatsby-code-',
+            },
+          },
         ],
       },
     },

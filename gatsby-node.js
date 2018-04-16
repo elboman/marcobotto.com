@@ -3,6 +3,7 @@ const path = require('path');
 exports.modifyWebpackConfig = function({ config, env }) {
   config._config.resolve.alias = {
     '@components': path.resolve('src/components/'),
+    '@features': path.resolve('src/features/'),
     '@utils': path.resolve('src/utils/'),
     '@pages': path.resolve('src/pages/'),
     '@assets': path.resolve('src/assets/'),
