@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { TypographyStyle } from 'react-typography';
-
-import { typography } from '@utils';
 
 let stylesStr;
 if (process.env.NODE_ENV === 'production') {
@@ -34,7 +31,6 @@ export default class HTML extends Component {
             content="width=device-width, initial-scale=1.0"
           />
           {this.props.headComponents}
-          <TypographyStyle typography={typography} />
           {css}
         </head>
         <body>
