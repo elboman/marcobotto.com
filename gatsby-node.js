@@ -15,7 +15,22 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage, createRedirect } = boundActionCreators;
 
   // setup redirects
-  // ..
+  const legacyBlogUrls = [
+    '/compiling-and-bundling-typescript-libraries-with-webpack/',
+    '/overview-of-ui-router-react-and-comparison-with-react-router/',
+    '/frontend-javascript-single-page-application-architecture/',
+    '/the-hitchhikers-guide-to-the-modern-front-end-development-workflow/',
+  ];
+
+  legacyBlogUrls.forEach(url => {
+    const to = `/blog${url}`;
+    createRedirect({
+      fromPath: url,
+      isPermanent: true,
+      redirectInBrowser: true,
+      toPath: to,
+    });
+  });
 
   // create pages
   const PostTemplate = path.resolve('src/templates/post.js');
