@@ -32,10 +32,20 @@ module.exports = {
           'gatsby-remark-smartypants',
           'gatsby-remark-source-instance',
           'gatsby-remark-use-jsx',
+          'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
               classPrefix: 'gatsby-code-',
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 2000,
+              linkImagesToOriginal: false,
+              sizeByPixelDensity: false,
+              quality: 100,
             },
           },
         ],

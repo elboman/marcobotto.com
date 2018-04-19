@@ -286,7 +286,7 @@ Since I started developing in React I always missed the flexibility of UI-Router
 The [state and transition visualizer](https://github.com/ui-router/visualizer) is a very handy tool for developers. It's a drop-in utility that lets you visualize the state tree and transitions of your UI-Router application.
 It's written in React, and works both on every implementation of UI-Router.
 
-![State and Transition visualizer](/static/img/posts/state-transitions-visualizer.png){: .image-fullwidth}
+![State and Transition visualizer](state-transitions-visualizer.png)
 
 ### Getting Started
 
