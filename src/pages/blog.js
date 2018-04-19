@@ -17,7 +17,7 @@ export default ({ data }) => {
         {posts.map(({ frontmatter }) => (
           <div key={frontmatter.slug}>
             <div>{format(new Date(frontmatter.date), 'DD/MM/YY')}</div>
-            <Link to={`/blog/${frontmatter.slug}`}>
+            <Link to={`/blog/${frontmatter.slug}/`}>
               <span>{frontmatter.title}</span>
             </Link>
           </div>
