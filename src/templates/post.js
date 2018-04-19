@@ -1,7 +1,19 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'react-emotion';
+import { css } from 'emotion';
 import DisqusThread from 'react-disqus-thread';
+
+import { mq } from '@utils';
+
+import {
+  PageWrapper,
+  PageContent,
+  Metadata,
+  CommentSection,
+} from '@components';
+
+import { Menu, Footer } from '@features';
 
 const _BlogTitle = styled.h1`
   font-size: 3rem;
@@ -9,8 +21,15 @@ const _BlogTitle = styled.h1`
   margin-bottom: 2rem;
 `;
 
-import { PageWrapper, PageContent, Metadata } from '@components';
-import { Menu, Footer } from '@features';
+const _WrapperNoPadding = styled(PageWrapper)`
+  padding: 0 !important;
+`;
+
+const _ContentNoPadding = styled(PageContent)`
+  ${mq.large(css`
+    padding: 1rem 0 0;
+  `)};
+`;
 
 export default function PostTemplate({ data, ...props }) {
   const { markdownRemark: post } = data;
@@ -18,24 +37,40 @@ export default function PostTemplate({ data, ...props }) {
   const relativeUrl = props.location.pathname;
   const pageUrl = `https://marcobotto.com${relativeUrl}`;
   return (
-    <PageWrapper>
-      <Menu />
-      <PageContent>
-        <Metadata title={title} description={post.excerpt} url={relativeUrl} />
-        <_BlogTitle>{post.frontmatter.title}</_BlogTitle>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
-        <DisqusThread
-          shortname="marcobotto"
-          identifier={`/${post.frontmatter.slug}/`}
-          title={title}
-          url={pageUrl}
-        />
-      </PageContent>
-      <Footer />
-    </PageWrapper>
+    <div>
+      <PageWrapper>
+        <Menu />
+        <PageContent>
+          <Metadata
+            title={title}
+            description={post.excerpt}
+            url={relativeUrl}
+          />
+          <_BlogTitle>{post.frontmatter.title}</_BlogTitle>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </PageContent>
+      </PageWrapper>
+      <CommentSection>
+        <_WrapperNoPadding>
+          <_ContentNoPadding>
+            <DisqusThread
+              shortname="marcobotto"
+              identifier={`/${post.frontmatter.slug}/`}
+              title={title}
+              url={pageUrl}
+            />
+          </_ContentNoPadding>
+        </_WrapperNoPadding>
+      </CommentSection>
+      <PageWrapper>
+        <PageContent>
+          <Footer />
+        </PageContent>
+      </PageWrapper>
+    </div>
   );
 }
 
