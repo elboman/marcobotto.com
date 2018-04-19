@@ -17,5 +17,5 @@ const buttonActiveClass = css`
 const Button = getStyledButton(Link);
 
 export const ButtonLink = props => (
-  <Button {...props} exact activeClassName={buttonActiveClass} />
+  <Button {...props} activeClassName={buttonActiveClass} />
 );

@@ -1,3 +1,4 @@
+import { colors } from '@utils';
 import { injectGlobal as css } from 'emotion';
 
 css`
@@ -220,8 +221,10 @@ css`
     margin-bottom: 1.5rem;
   }
   h1 {
+    color: ${colors.titles};
+  }
+  h1 {
     margin-bottom: 1.5rem;
-    color: hsla(0, 0%, 0%, 0.9);
     font-weight: 700;
     text-rendering: optimizeLegibility;
     font-size: 2rem;
@@ -236,7 +239,6 @@ css`
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.5rem;
-    color: hsla(0, 0%, 0%, 0.9);
     font-family: 'Rosario', sans-serif;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -252,7 +254,6 @@ css`
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.5rem;
-    color: hsla(0, 0%, 0%, 0.9);
     font-family: 'Rosario', sans-serif;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -268,7 +269,6 @@ css`
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.5rem;
-    color: hsla(0, 0%, 0%, 0.9);
     font-family: 'Rosario', sans-serif;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -284,7 +284,6 @@ css`
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.5rem;
-    color: hsla(0, 0%, 0%, 0.9);
     font-family: 'Rosario', sans-serif;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -300,7 +299,6 @@ css`
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.5rem;
-    color: hsla(0, 0%, 0%, 0.9);
     font-family: 'Rosario', sans-serif;
     font-weight: 700;
     text-rendering: optimizeLegibility;

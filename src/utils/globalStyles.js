@@ -40,7 +40,7 @@ css`
   h4 > code,
   h5 > code,
   h6 > code {
-    background: khaki;
+    background: ${colors.activeLight};
     padding: 0.1rem 0.3rem;
     font-size: 0.95rem;
     line-height: inherit;

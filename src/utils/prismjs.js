@@ -3,22 +3,40 @@ import { injectGlobal as css } from 'emotion';
 import { colors } from '@utils';
 
 const prismColors = {
-  base: '#2e2e2e',
+  base: '#FFFFFF',
   char: '#D8DEE9',
-  comment: '#bf947b',
-  keyword: '#9d5d9d',
+  comment: '#999999',
+  keyword: '#c5a5c5',
   lineHighlight: '#14161a',
   primitive: '#5a9bcf',
-  string: '#2d8c33',
-  variable: '#3d64a6',
-  boolean: '#904119',
-  punctuation: '#348080',
-  tag: '#3d64a6',
-  function: '#2d79c4',
-  className: '#bc3f04',
+  string: '#8dc891',
+  variable: '#d7deea',
+  boolean: '#ff8b50',
+  punctuation: '#5FB3B3',
+  tag: '#fc929e',
+  function: '#79b6f2',
+  className: '#FAC863',
   method: '#6699CC',
-  operator: '#3d64a6',
+  operator: '#fc929e',
 };
+
+// const prismColors = {
+//   base: '#fff',
+//   char: '#D8DEE9',
+//   comment: '#bf947b',
+//   keyword: '#9d5d9d',
+//   lineHighlight: '#14161a',
+//   primitive: '#5a9bcf',
+//   string: '#2d8c33',
+//   variable: '#3d64a6',
+//   boolean: '#904119',
+//   punctuation: '#348080',
+//   tag: '#3d64a6',
+//   function: '#2d79c4',
+//   className: '#bc3f04',
+//   method: '#6699CC',
+//   operator: '#3d64a6',
+// };
 
 css`
   pre {
@@ -29,7 +47,7 @@ css`
     margin-left: -2rem;
     margin-right: -2rem;
     margin-bottom: 1.5rem;
-    background: #fff;
+    background: #222;
     color: ${prismColors.base};
     border-radius: 10px;
     overflow: auto;

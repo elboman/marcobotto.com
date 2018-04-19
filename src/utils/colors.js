@@ -1,7 +1,9 @@
 export const colors = {
-  bg: 'beige',
-  black: 'rgba(0, 0, 0, 0.73)',
-  link: '#da0b28',
-  menuActive: '#da0b28',
-  dark: '#282c34',
+  bg: 'white',
+  black: 'hsla(0,0%,0%,0.73)',
+  titles: 'hsla(0,0%,0%,0.73)',
+  link: '#e4059e',
+  menuActive: '#e4059e',
+  dark: '#379e9a',
+  activeLight: '#fff11a',
 };
