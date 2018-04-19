@@ -1,6 +1,6 @@
-import { injectGlobal as css } from 'emotion';
+import { injectGlobal as css, css as _css } from 'emotion';
 
-import { colors } from '@utils';
+import { colors, mq } from '@utils';
 
 const prismColors = {
   base: '#FFFFFF',
@@ -43,17 +43,23 @@ css`
     margin-bottom: 0;
   }
   .gatsby-highlight {
-    margin-top: 1.5rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem -1rem;
     background: #222;
     color: ${prismColors.base};
-    border-radius: 10px;
     overflow: auto;
     tab-size: 1.5em;
     padding: 1rem 2rem;
-    border: 4px solid ${colors.dark};
+    border-top: 4px solid ${colors.dark};
+    border-bottom: 4px solid ${colors.dark};
+
+    ${mq.large(_css`
+      border: 4px solid ${colors.dark};
+      margin-top: 1.5rem;
+      margin-left: -2rem;
+      margin-right: -2rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+    `)};
   }
 
   .gatsby-highlight code[class*='gatsby-code-'],

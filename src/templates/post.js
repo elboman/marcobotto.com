@@ -21,11 +21,12 @@ const _BlogTitle = styled.h1`
   margin-bottom: 2rem;
 `;
 
-const _WrapperNoPadding = styled(PageWrapper)`
+const _CommentsWrapper = styled(PageWrapper)`
   padding: 0 !important;
 `;
 
-const _ContentNoPadding = styled(PageContent)`
+const _CommentsContent = styled(PageContent)`
+  padding: 1rem;
   ${mq.large(css`
     padding: 1rem 0 0;
   `)};
@@ -54,16 +55,16 @@ export default function PostTemplate({ data, ...props }) {
         </PageContent>
       </PageWrapper>
       <CommentSection>
-        <_WrapperNoPadding>
-          <_ContentNoPadding>
+        <_CommentsWrapper>
+          <_CommentsContent>
             <DisqusThread
               shortname="marcobotto"
               identifier={`/${post.frontmatter.slug}/`}
               title={title}
               url={pageUrl}
             />
-          </_ContentNoPadding>
-        </_WrapperNoPadding>
+          </_CommentsContent>
+        </_CommentsWrapper>
       </CommentSection>
       <PageWrapper>
         <PageContent>
