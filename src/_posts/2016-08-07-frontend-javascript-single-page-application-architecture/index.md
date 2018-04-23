@@ -75,8 +75,7 @@ There are a plethora of options to choose from: `jQuery.ajax()`, `axios`, `fetch
 
 The **line between the tools for the UI layer, state and logic is blurry**, as these elements are tightly connected. Let's take this simple example:
 
-<div id="counter-example"></div>
-<br />
+[Counter example](embedded-codesandbox://counter)
 
 Even the simplest application such as this counter has these three concepts in place, and depending on the way you build it, they can be part of different libraries/frameworks, or your own code. Again the importance here is to understand the underlying concepts and not the [architecture patterns](https://lostechies.com/derekgreer/2007/08/25/interactive-application-architecture/) that are in place in the different solutions.
 
