@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: 'marcobotto.com',
@@ -40,12 +42,20 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 2000,
               linkImagesToOriginal: false,
               sizeByPixelDensity: false,
               quality: 100,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-embedded-codesandbox',
+            options: {
+              directory: path.resolve(__dirname, 'src', '_examples'),
+              getIframe: url =>
+                `<div class="embedded-codesandbox"><iframe src="${url}" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe></div>`,
             },
           },
         ],
