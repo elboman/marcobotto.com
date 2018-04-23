@@ -39,7 +39,7 @@ So, after building applications for the past ~3 years, I've come up with what I 
 
 Before going into details of each block, it's useful to understand how they relate to each other. Since they are just _concepts_ it's difficult to paint _the correct_ image and once you build an application you may find the actual implementation different, and that's perfectly normal.In fact you may want to add different players to the game, such a cache, an event system, or really anything you may need for your application.
 
-![Front end architecture scheme](/static/img/posts/front-end-architecture-scheme.svg){: .component-lifecycle}
+![Front end architecture scheme](front-end-architecture-scheme.svg)
 
 At the ends we find the user and the back end (if the application needs one). The application communicates to the back end via the HTTP library while the user interacts with the app via the UI layer. Everything else stays in a big box and blend together.
 
@@ -80,7 +80,7 @@ The **line between the tools for the UI layer, state and logic is blurry**, as t
 
 Even the simplest application such as this counter has these three concepts in place, and depending on the way you build it, they can be part of different libraries/frameworks, or your own code. Again the importance here is to understand the underlying concepts and not the [architecture patterns](https://lostechies.com/derekgreer/2007/08/25/interactive-application-architecture/) that are in place in the different solutions.
 
-![Front end architecture scheme](/static/img/posts/counter-lifecycle.svg){: .component-lifecycle}
+![Front end architecture scheme](counter-lifecycle.svg)
 
 #### UI layer
 
