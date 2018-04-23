@@ -27,13 +27,12 @@ const year = format(new Date(), 'YYYY');
 export const Footer = () => (
   <_Footer>
     &copy; {year} Marco Botto.<br />
+    Happily{' '}
     <FirstIcon>
-      <CodeIcon />
+      <a href="https://github.com/elboman/marcobotto.com">
+        <CodeIcon />
+      </a>
     </FirstIcon>{' '}
-    with{' '}
-    <Icon>
-      <LoveIcon />
-    </Icon>{' '}
     with <a href="https://github.com/gatsbyjs/gatsby">gatsby.js</a>
   </_Footer>
 );
