@@ -145,7 +145,7 @@ Luckily SASS/LESS syntax is very similar to the standard one, so when you write 
 
 Code linters are tools that programatically read your code and **spot possible errors** (bugs) as well as check for **code style consistency**.
 
-The term _lint_ comes for a Linux software that reads your `C` code and statically find bugs before compiling. Since than every software that does a similar job has been label as a _linter_.
+The term _lint_ comes for a Linux software that reads your `C` code and statically finds bugs before compiling. Since then, every software that does a similar job has been labelled as a _linter_.
 
 Too often bugs are related to simple typos, like forgetting a semicolon or a colon, writing conditional statements that can't be reached or stuff like that. In addition, when you work in team, having a way to enforce style consistency is vital for the longevity of the project.
 
