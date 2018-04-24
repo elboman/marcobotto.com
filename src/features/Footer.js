@@ -17,22 +17,17 @@ const Icon = styled.span`
   margin: 0 0.1rem;
 `;
 
-const FirstIcon = styled(Icon)`
-  margin: 0 0.1rem 0 0;
-  bottom: -0.1rem;
-`;
-
 const year = format(new Date(), 'YYYY');
 
 export const Footer = () => (
   <_Footer>
     &copy; {year} Marco Botto.<br />
     Happily{' '}
-    <FirstIcon>
+    <Icon>
       <a href="https://github.com/elboman/marcobotto.com">
         <CodeIcon />
       </a>
-    </FirstIcon>{' '}
+    </Icon>{' '}
     with <a href="https://github.com/gatsbyjs/gatsby">gatsby.js</a>
   </_Footer>
 );
