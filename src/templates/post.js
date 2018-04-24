@@ -9,17 +9,12 @@ import { mq } from '@utils';
 import {
   PageWrapper,
   PageContent,
+  PageTitle,
   Metadata,
   CommentSection,
 } from '@components';
 
 import { Menu, Footer } from '@features';
-
-const _BlogTitle = styled.h1`
-  font-size: 3rem;
-  margin-top: 0;
-  margin-bottom: 2rem;
-`;
 
 const _CommentsWrapper = styled(PageWrapper)`
   padding: 0 !important;
@@ -47,7 +42,7 @@ export default function PostTemplate({ data, ...props }) {
             description={post.excerpt}
             url={relativeUrl}
           />
-          <_BlogTitle>{post.frontmatter.title}</_BlogTitle>
+          <PageTitle>{post.frontmatter.title}</PageTitle>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: post.html }}
