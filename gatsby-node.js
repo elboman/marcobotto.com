@@ -32,6 +32,21 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
   });
 
+  // temporary redirects
+  const temporaryRedirects = {
+    '/': '/blog',
+  };
+
+  Object.keys(temporaryRedirects).forEach(fromPath => {
+    const toPath = temporaryRedirects[fromPath];
+    createRedirect({
+      fromPath,
+      toPath,
+      redirectInBrowser: true,
+      isPermanent: false,
+    });
+  });
+
   // create pages
   const PostTemplate = path.resolve('src/templates/post.js');
 
