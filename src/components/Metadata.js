@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 export const Metadata = ({
-  imgUrl = '/marco-botto.jpg',
+  imgUrl = '/elbo.jpg',
   url = '',
   title = '',
   description = 'OSS enthusiast & UI-Router React maintainer. JavaScript/ES6, React & Angular.',
