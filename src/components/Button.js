@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'react-emotion';
+import { css } from 'emotion';
 
-import { colors } from '@utils';
+import { colors, mq } from '@utils';
 
 export function getStyledButton(Comp) {
   const _OuterButton = styled(Comp)`
@@ -22,7 +23,11 @@ export function getStyledButton(Comp) {
     border-radius: 5px;
     box-shadow: 4px 4px 0px ${colors.black};
     margin: 0 4px 4px 0;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.4rem;
+
+    ${mq.large(css`
+      padding: 0.3rem 0.6rem;
+    `)};
 
     &:active {
       margin: 4px 0 0 4px;
