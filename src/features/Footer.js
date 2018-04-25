@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import { format } from 'date-fns';
 
-import { CodeIcon, LoveIcon } from '@components';
+import { Icons } from '@components';
 
 const _Footer = styled.footer`
   font-style: italic;
@@ -18,6 +18,8 @@ const Icon = styled.span`
 `;
 
 const year = format(new Date(), 'YYYY');
+
+const { Code: CodeIcon } = Icons;
 
 export const Footer = () => (
   <_Footer>
