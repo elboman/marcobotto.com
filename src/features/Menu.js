@@ -19,6 +19,7 @@ const _ProfilePic = styled.div`
   border-radius: 0.5rem;
   width: 5.5rem;
   height: 5.5rem;
+  flex: 0 0 5.5rem;
 
   & > img {
     width: 100%;
