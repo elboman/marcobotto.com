@@ -13,14 +13,23 @@ export const Metadata = ({
   return (
     <Helmet>
       <title>{pageTitle}</title>
-      <meta property="og:url" content={`https://marcobotto.com${url}`} />
+      <meta
+        property="og:url"
+        content={`https://marcobotto.netlify.com${url}`}
+      />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
-      <meta property="og:image" content={`https://marcobotto.com${imgUrl}`} />
+      <meta
+        property="og:image"
+        content={`https://marcobotto.netlify.com${imgUrl}`}
+      />
       <meta property="og:description" content={description} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`https://marcobotto.com${imgUrl}`} />
+      <meta
+        name="twitter:image"
+        content={`https://marcobotto.netlify.com${imgUrl}`}
+      />
       <meta name="twitter:card" content="summary_large_image" />
       {children}
     </Helmet>
