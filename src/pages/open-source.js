@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-import { PageWrapper, PageContent, Icons } from '@components';
+import { PageWrapper, PageContent, Icons, Metadata } from '@components';
 import { Menu, Footer } from '@features';
 import { colors } from '@utils';
 
@@ -70,6 +70,7 @@ export default () => {
     <PageWrapper>
       <Menu />
       <PageContent>
+        <Metadata title="Open Source Projects" url="/open-source" />
         <_Projects>
           {projects.map(prj => (
             <_Project key={prj.url}>

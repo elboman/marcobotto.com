@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Link from 'gatsby-link';
 
-import { PageWrapper, PageContent, PageTitle } from '@components';
+import { PageWrapper, PageContent, PageTitle, Metadata } from '@components';
 import { Menu, Footer } from '@features';
 
 import '@utils/globalStyles';
@@ -22,6 +22,7 @@ export default () => {
     <PageWrapper>
       <Menu />
       <PageContent>
+        <Metadata title="About Marco Botto" url="/about" />
         <PageTitle>Ciao.</PageTitle>
         <_Content>
           <p>

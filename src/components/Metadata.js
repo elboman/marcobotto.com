@@ -5,7 +5,7 @@ export const Metadata = ({
   imgUrl = '/elbo.jpg',
   url = '',
   title = '',
-  description = 'OSS enthusiast & UI-Router React maintainer. JavaScript/ES6, React & Angular.',
+  description = "Ciao. My name is Marco Botto. I'm a Front End Engineer at Facebook.",
   children,
   ...rest
 }) => {
