@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'marcobotto.com',
     author: 'Marco Botto',
+    siteUrl: `https://marcobotto.com`,
   },
   plugins: [
     'gatsby-plugin-sitemap',
