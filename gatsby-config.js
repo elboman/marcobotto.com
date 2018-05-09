@@ -6,6 +6,7 @@ module.exports = {
     author: 'Marco Botto',
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-emotion',
     {
       resolve: `gatsby-plugin-google-analytics`,
