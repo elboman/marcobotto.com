@@ -8,6 +8,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-emotion',
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-71636045-1',
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/_posts`,
