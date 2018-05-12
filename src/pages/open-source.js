@@ -59,6 +59,12 @@ const projects = [
     url: 'https://github.com/elboman/gatsby-remark-embedded-codesandbox',
   },
   {
+    name: 'gatsby-remark-source-name',
+    description:
+      'A Gatsby Remark plugin for adding a custom sourceName field to remark nodes.',
+    url: 'https://github.com/elboman/gatsby-remark-source-name',
+  },
+  {
     name: 'proofed',
     description: 'User interaction validation library for React.',
     url: 'https://github.com/elboman/proofed',
