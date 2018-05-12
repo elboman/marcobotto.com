@@ -48,7 +48,7 @@ const projects = [
     url: 'https://github.com/ui-router/react',
   },
   {
-    name: '@uirouter/readux',
+    name: '@uirouter/redux',
     description: 'UI-Router plugin for Redux integration.',
     url: 'https://github.com/ui-router/redux',
   },
