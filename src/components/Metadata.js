@@ -13,6 +13,7 @@ export const Metadata = ({
   return (
     <Helmet>
       <title>{pageTitle}</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       <meta
         property="og:url"
         content={`https://marcobotto.netlify.com${url}`}
