@@ -11,10 +11,6 @@ export function getStyledButton(Comp) {
     cursor: pointer;
     color: ${colors.black};
     text-decoration: none;
-
-    &:focus {
-      outline: 0;
-    }
   `;
 
   const _InnerButton = styled.div`
