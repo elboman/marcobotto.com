@@ -12,7 +12,6 @@ const { ExternalLink } = Icons;
 const _Projects = styled.div`
   display: grid;
   grid-gap: 2rem;
-  grid-auto-rows: minmax(100%, 100%);
 `;
 
 const _Project = styled.div``;
