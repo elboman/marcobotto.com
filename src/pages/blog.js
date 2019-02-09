@@ -11,7 +11,6 @@ import '@utils/globalStyles';
 const _Posts = styled.section`
   display: grid;
   grid-gap: 2rem;
-  grid-auto-rows: minmax(100%, 100%);
 `;
 
 const _Date = styled.div`
